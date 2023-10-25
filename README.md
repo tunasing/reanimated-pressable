@@ -4,8 +4,19 @@
 
 ## Feature
 
--   currently has only animation types `bounce|elevate|shade`
--   easy add in addition custom `PressAnim` via `anim` property
+-   currently has animation types `bounce|elevate|shade`
+-   easy add in additional custom animations in `PressAnim.ts` to use with `anim` property
+-   bypass `PressIn` event when `isActive` property returns `false`. (Defaults to true)
+
+## Instructions
+
+Specify `anim` property in the `Pressable.ranim` component
+
+```
+    <Pressable.ranim anim={'elevate'} style={styles.prss}>
+        <Text color={'white'} children={'Reanimated.Pressable'} />
+    </Pressable.ranim>
+```
 
 ## Pre-requisites
 
